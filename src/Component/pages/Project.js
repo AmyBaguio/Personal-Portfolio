@@ -1,26 +1,66 @@
 import React from "react";
-// import Image from "material-ui-image";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
-const Blog = () => (
-  <div>
-    <h1>Blog Page</h1>
-    {/* <Image src="./image/Activynizer.png" /> */}
-    <p>
-      Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-      Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu dictum.
-      Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus sodales
-      volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc, sed
-      pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum,
-      nisi justo laoreet risus, luctus luctus mi lacus sit amet libero. Class
-      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-      himenaeos. Mauris pretium condimentum tellus eget lobortis. Interdum et
-      malesuada fames ac ante ipsum primis in faucibus. Donec placerat accumsan
-      mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque
-      vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque
-      semper, lectus non ullamcorper iaculis, est ligula suscipit velit, sed
-      bibendum turpis dui in sapien.
-    </p>
-  </div>
-);
 
-export default Blog;
+const styles = {
+  project: {
+    margin: "20px",
+    backgroundColor: "#efebe9",
+    padding: "3rem",
+    fontFamily: "Arial",
+    fontSize: "1.5rem",
+    color: "#c97b63"
+  },
+};
+
+function Project() {
+  return (
+    <Container fluid style={styles.project} className="ProjectTile">
+      <Row>
+        <Col xs={6} md={4}>
+          <Image src="./image/Activynizer.png" thumbnail />
+        </Col>
+        <Col xs={6} md={4}>
+          <Image src="./image/Project2.png" thumbnail />
+        </Col>
+        <Col xs={6} md={4}>
+          <Image src="./image/ProgressiveBudget.png" thumbnail />
+        </Col>
+      </Row>
+        <Row>
+            <Col xs={6} md={4}>
+            <p>Activynizer</p>
+            </Col>
+            <Col xs={6} md={4}>
+            <p>Project 2</p>
+            </Col>
+            <Col xs={6} md={4}>
+            <p>Budget Tracker</p>
+            </Col>
+        </Row>
+      <Row>
+        <Col xs={6} md={4}>
+          <Image src="./image/FitnessTracker.png" thumbnail />
+        </Col>
+        <Col xs={6} md={4}>
+          <Image src="./image/MyTeam.png" thumbnail />
+        </Col>
+        <Col xs={6} md={4}>
+          <Image src="./image/BurgerApp.png" thumbnail />
+        </Col>
+      </Row>
+      <Row>
+            <Col xs={6} md={4}>
+            <p>Fitness Tracker</p>
+            </Col>
+            <Col xs={6} md={4}>
+            <p>My Team</p>
+            </Col>
+            <Col xs={6} md={4}>
+            <p>Burger App</p>
+            </Col>
+        </Row>
+    </Container>
+  );
+}
+export default Project;

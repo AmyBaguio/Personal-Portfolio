@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "center",
-    backgroundColor: "#d3b8ae",
+    backgroundColor: "#efdcd5",
     
   },
   button: {
@@ -47,7 +47,7 @@ export default function NavTabs(props) {
           onClick={() => props.handlePageChange("Project")}
           className={props.currentPage === "Blog" ? "nav-link active" : "nav-link"}
         >
-          Project
+          Projects
         </a>
       </li>
      

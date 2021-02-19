@@ -6,7 +6,7 @@ const styles = {
     
     fontSize: "2rem",
     fontFamily: "SansSerif",
-    backgroundColor: "#a1887f",
+    backgroundColor: "#bcaaa4",
     justifyContent: "center",
     display: "flex",
     width: "100%"
