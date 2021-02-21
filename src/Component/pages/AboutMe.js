@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
-
 const styles = {
   project: {
     margin: "20px",
@@ -9,12 +8,9 @@ const styles = {
     padding: "3rem",
     fontFamily: "Arial",
     fontSize: "1.25rem",
-    
   },
 };
 export default function AboutMe() {
- 
-
   return (
     <Container fluid style={styles.project} className="AboutMe">
       <Row>
@@ -27,6 +23,9 @@ export default function AboutMe() {
           />
         </Col>
         <Col xs={6} md={8}>
+          <h3>Email Address: amalynlaquinta@yahoo.com</h3>
+          <h3>Mobile Number: +61-0466 429 484</h3>
+          <br />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             rhoncus massa tincidunt sapien fringilla ullamcorper. Duis ut
